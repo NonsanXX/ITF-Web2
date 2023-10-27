@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&family=Rubik&display=swap');
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+main {
+    width: 1024px;
+    min-height: 100vh;
+    border: 2px gray solid;
+    margin: 0px auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+p {
+    margin: 0;
+}
+#noti-text{
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
+.parent {
+    margin-top: 20px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url(/image/profile.jpg);
+    background-size: cover;
+    border-radius: 191px 191px;
+}
+.child{
+    background-color: red;
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    width: 75px;
+    height: 75px;
+    border-radius: 191px 191px;
+}
+.flex{
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 20px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    width: 900px;
+    height: 1000px;
+    gap: 16px;
+}
+.gallery .image {
+    background-color: black;
+}
+#extend-col {
+    grid-column: span 2;
+    background-color: red;
+}
+#extend-row {
+    grid-row: span 2;
+    background-color: green;
+}
+
+#profile-link {
+    color: black;
+    font-size: 48px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+#profile-link:hover{
+    color:blue;
+    text-decoration: underline;
+}
+
+.gallery .image:nth-child(1) {
+    background-size: cover;
+    background-image: url(https://images.pexels.com/photos/3640930/pexels-photo-3640930.jpeg?auto=compress&cs=tinysrgb&w=1600);
+}
+.gallery .image:nth-child(2) {
+    background-size: cover;
+    background-image: url(https://images.pexels.com/photos/3028961/pexels-photo-3028961.jpeg?auto=compress&cs=tinysrgb&w=1600);
+}
+.gallery .image:nth-child(3) {
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images.pexels.com/photos/6202036/pexels-photo-6202036.jpeg?auto=compress&cs=tinysrgb&w=1600);
+}
+.gallery .image:nth-child(4) {
+    background-size: cover;
+    background-image: url(https://images.pexels.com/photos/7235328/pexels-photo-7235328.jpeg?auto=compress&cs=tinysrgb&w=1600);
+}
+.gallery .image:nth-child(5) {
+    background-size: cover;
+    background-image: url(https://images.pexels.com/photos/9898728/pexels-photo-9898728.jpeg?auto=compress&cs=tinysrgb&w=1600);
+}
+.gallery .image:nth-child(6) {
+    background-size: cover;
+    background-image: url(https://images.pexels.com/photos/7356405/pexels-photo-7356405.jpeg?auto=compress&cs=tinysrgb&w=1600);
+}
+.gallery .image:nth-child(7) {
+    background-size: cover;
+    background-image: url(https://images.pexels.com/photos/5913168/pexels-photo-5913168.jpeg?auto=compress&cs=tinysrgb&w=1600);
+}
+.gallery .image:nth-child(8) {
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://images.pexels.com/photos/3366377/pexels-photo-3366377.jpeg?auto=compress&cs=tinysrgb&w=1600);
+}
+.gallery .image:nth-child(9) {
+    background-size: cover;
+    background-image: url(https://images.pexels.com/photos/5913380/pexels-photo-5913380.jpeg?auto=compress&cs=tinysrgb&w=1600);
+}
+.gallery .image:nth-child(10) {
+    background-size: cover;
+    background-image: url(https://images.pexels.com/photos/8467429/pexels-photo-8467429.jpeg?auto=compress&cs=tinysrgb&w=1600);
+}

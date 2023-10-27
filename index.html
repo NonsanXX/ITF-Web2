@@ -3,13 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>ITF-WEB 2</title>
-<script>
+    <script>
+        function setName() {
+            const nameField = document.getElementById("username");
+            const name = nameField.value;
+            const title = document.getElementById("profile-link");
+            title.innerText = name + "'s Profile";
+        }
 
-</script>
-
+        function setImage() {
+            const profileImage = document.getElementById("profileImage");
+            const changeImage = document.getElementById("imageURL");
+            console.log(changeImage.value)
+            profileImage.style.backgroundImage = "url("+changeImage.value+")"
+        }
+    </script>
 </head>
 <body>
-
+    <main>
+        <div class="parent" id="profileImage">
+            <div class="child">
+                <div id="noti-text">
+                    1
+                </div>
+            </div>
+        </div>
+        <a href="https://www.instagram.com/paperplane_x" target="_blank" id="profile-link">PAPER's Profile</a>
+        <div class="flex">
+            <p>Set profile name</p>
+            <input id="username" type="text" />
+            <button onclick="setName()">SET</button>
+        </div>
+        <div class="flex">
+            <p>Set profile picture</p>
+            <input id="imageURL" type="text" />
+            <button onclick="setImage()">SET</button>
+        </div>
+        <div class="gallery">
+            <div class="image"></div>
+            <div  id="extend-col" class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div id="extend-row" class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+        </div>
+        <br>
+        <br>
+        <br>
+    </main>
 </body>
 </html>
